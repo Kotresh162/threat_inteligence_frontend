@@ -1,12 +1,27 @@
-# React + Vite
+# 📊 Threat Intelligence Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive and interactive dashboard built with **React.js** that displays threat analysis data, including revenue, performance metrics, and severity-based charts.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Clean and modern UI with stat cards
+- Search input for filtering data
+- Responsive layout with flexbox
+- Reusable chart components using `recharts`
+- Placeholder for line chart and live bar chart integration
 
-## Expanding the ESLint configuration
+## Images
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/yourusername/threat-dashboard.git
+   cd threat-dashboard
+   npm install
+   npm run dev
+
+## Tech Stack
+React.js – Frontend framework
+
+Recharts – Chart library
+
+CSS Modules – Component-scoped styling
