@@ -1,0 +1,42 @@
+  /* .threaAnalusis {
+    width: 100%;           
+    height: 50vh;   
+    padding: 20px;         
+    box-sizing: border-box;
+    background-color: #fafafa;
+    border: 2px solid #d41616;
+  } */
+
+  /* .boxChartSection {
+    display: flex;
+    gap: 20px;
+  }
+   */
+  .infoBoxes {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .box {
+    text-decoration: none;
+    color: #000;
+    border: 2px solid rgb(96 139 168);
+    border-radius: 5px;
+    background-color: rgb(96 139 168 / 0.2);
+    padding: 10px;
+    display: block;
+  }
+  
+  /* .charts {
+    flex: 0 0 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  } */
+  
+  .threts {
+    margin-top: 30px;
+  }
+  
