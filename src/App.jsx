@@ -5,7 +5,7 @@ import HomePage from './components/home-component/Home_page';
 import Dashboard from './components/dash-board-component/dashboard';
 function App() {
   // const [count, setCount] = useState(0)
-
+//its big project woth predictions
   return (
     <>
       {/* <HomePage/> */}
