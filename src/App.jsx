@@ -1,15 +1,15 @@
 // import { useState } from 'react'
 import { BarChart } from 'recharts';
 import './App.css'
-import HomePage from './components/home-component/Home_page';
 import Dashboard from './components/dash-board-component/dashboard';
+import Navbar from './components/nav-bar/navbar';
+import { useState } from 'react';
 function App() {
-  // const [count, setCount] = useState(0)
-//its big project woth predictions
+  const [theme, setTheme] = useState("light");
   return (
     <>
-      {/* <HomePage/> */}
-      <Dashboard/>
+      <Navbar theme={ theme} setTheme={setTheme} />
+      {/* <Dashboard/> */}
     </>
   )
 }

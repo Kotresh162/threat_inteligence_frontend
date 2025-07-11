@@ -4,6 +4,7 @@ import SeverityBarChart from '../chart-component/Bar_chart';
 import CategoryPieChart from '../chart-component/data_chart';
 import axios from 'axios';
 import ThreatList from '../chart-component/listview/threat_list';
+import Navbar from '../nav-bar/navbar';
 
 const Dashboard = () => {
   const [threatStats, setThreatStats] = useState(null);
@@ -30,9 +31,10 @@ const Dashboard = () => {
     <div className={styles.dashboard}>
       <main className={styles.mainContent}>
         {/* Top search bar */}
-        <header className={styles.topbar}>
+        <Navbar/>
+        {/* <header className={styles.topbar}>
           <input type="text" placeholder="Search anything here..." />
-        </header>
+        </header> */}
 
         {/* Stats cards */}
         <section className={styles.statsRow}>
