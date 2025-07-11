@@ -1,7 +1,7 @@
 import React from 'react'
 import logo_day from '../../assets/logo-black.png'
 import logo_night from '../../assets/logo-white.png'
-import search_day from '../../assets/search-b.png'
+// import search_day from '../../assets/search-b.png'
 import search_night from '../../assets/search-w.png'
 import toggle_day from '../../assets/night.png'
 import toggle_night from '../../assets/day.png'
@@ -24,7 +24,7 @@ const Navbar = ({theme,setTheme}) => {
         <input type="text" placeholder='search' />
         <img src={search_night} alt="" />
       </div>
-      <img onClick={() => { toggle_theme() }} src={toggle_day} alt="" className={ Styles.toggle} />
+      <img onClick={() => { toggle_theme() }} src={theme == 'light' ? toggle_day : toggle_night} alt="" className={ Styles.toggle} />
     </div>
   )
 }

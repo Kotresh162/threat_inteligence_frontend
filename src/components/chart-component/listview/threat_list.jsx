@@ -7,6 +7,7 @@ const ThreatList = () => {
   const [category, setCategory] = useState('');
   const [page, setPage] = useState(1);
   const [limit] = useState(10);
+  
 
   const fetchThreats = async () => {
     try {

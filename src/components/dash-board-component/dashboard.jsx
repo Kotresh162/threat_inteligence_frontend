@@ -9,6 +9,7 @@ import Navbar from '../nav-bar/navbar';
 const Dashboard = () => {
   const [threatStats, setThreatStats] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [theme, setTheme] = useState("light");
 
   useEffect(() => {
     axios.get('http://127.0.0.1:8000/api/threats/stats')
@@ -28,15 +29,10 @@ const Dashboard = () => {
   const { total_threats, category_counts, severity_counts } = threatStats;
 
   return (
-    <div className={styles.dashboard}>
+    <div className={`${styles.dashboard} ${theme === 'dark' ? styles.darkTheme : styles.lightTheme}`}>
       <main className={styles.mainContent}>
-        {/* Top search bar */}
-        <Navbar/>
-        {/* <header className={styles.topbar}>
-          <input type="text" placeholder="Search anything here..." />
-        </header> */}
+        <Navbar theme={theme} setTheme={setTheme} />
 
-        {/* Stats cards */}
         <section className={styles.statsRow}>
           <div className={styles.statCard}>
             <h4>Total Threats</h4>
@@ -56,7 +52,6 @@ const Dashboard = () => {
           </div>
         </section>
 
-        {/* Charts section */}
         <section className={styles.chartSection}>
           <div className={styles.chartCard}>
             <CategoryPieChart data={category_counts} />
@@ -68,7 +63,7 @@ const Dashboard = () => {
           </div>
         </section>
         <section>
-          <ThreatList/>
+          <ThreatList />
         </section>
       </main>
     </div>
